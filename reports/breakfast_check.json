@@ -1,0 +1,762 @@
+{
+  "kcal_target": 2000,
+  "protein_target": 70,
+  "profiles": [
+    {
+      "profile": "non-veg, no allergies",
+      "breakfasts": [
+        {
+          "name": "Oven Denver Omelet",
+          "servings": 2.0,
+          "kcal": 525.6,
+          "protein_g": 39.6,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Bacon and Egg Sandwich",
+          "servings": 1.5,
+          "kcal": 501.5,
+          "protein_g": 28.5,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Ultimate Fluffy Pancakes",
+          "servings": 1.25,
+          "kcal": 424.4,
+          "protein_g": 11.2,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Oven Cooked Bacon With Black Pepper and Brown Sugar",
+          "servings": 1.5,
+          "kcal": 519.3,
+          "protein_g": 13.2,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Rhubarb Coffee Cake",
+          "servings": 0.75,
+          "kcal": 511.0,
+          "protein_g": 5.9,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Cornmeal Scones",
+          "servings": 2.0,
+          "kcal": 486.6,
+          "protein_g": 9.0,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Good-Morning Pancakes",
+          "servings": 1.0,
+          "kcal": 458.8,
+          "protein_g": 13.3,
+          "fallback": false,
+          "problems": []
+        }
+      ],
+      "days_within_10pct": 7,
+      "breakfast_note": null
+    },
+    {
+      "profile": "non-veg, gluten and egg",
+      "breakfasts": [
+        {
+          "name": "Oatmeal Cottage Cheese Pancakes",
+          "servings": 1.5,
+          "kcal": 505.7,
+          "protein_g": 47.1,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Baked Maple Oatmeal",
+          "servings": 1.5,
+          "kcal": 488.2,
+          "protein_g": 17.7,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Oven Cooked Bacon With Black Pepper and Brown Sugar",
+          "servings": 1.75,
+          "kcal": 605.9,
+          "protein_g": 15.4,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Crunchy Granola",
+          "servings": 1.0,
+          "kcal": 533.3,
+          "protein_g": 12.5,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Vanilla-Scented Granola",
+          "servings": 1.25,
+          "kcal": 481.0,
+          "protein_g": 9.8,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Smoothie",
+          "servings": 1.75,
+          "kcal": 520.3,
+          "protein_g": 20.8,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Steel Cut Oatmeal for the Crock Pot",
+          "servings": 2.0,
+          "kcal": 540.4,
+          "protein_g": 17.8,
+          "fallback": false,
+          "problems": []
+        }
+      ],
+      "days_within_10pct": 7,
+      "breakfast_note": null
+    },
+    {
+      "profile": "eggetarian, no allergies",
+      "breakfasts": [
+        {
+          "name": "Curried Poached Eggs",
+          "servings": 1.25,
+          "kcal": 487.0,
+          "protein_g": 26.1,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Cardamom Lassi",
+          "servings": 2.0,
+          "kcal": 454.8,
+          "protein_g": 25.6,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Denny's-Style French Toast",
+          "servings": 2.0,
+          "kcal": 528.6,
+          "protein_g": 16.2,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Coconut muffins",
+          "servings": 1.25,
+          "kcal": 475.0,
+          "protein_g": 7.4,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Fruit Lassi",
+          "servings": 2.0,
+          "kcal": 430.6,
+          "protein_g": 15.4,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Banana Banana Bread",
+          "servings": 1.75,
+          "kcal": 409.2,
+          "protein_g": 6.3,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Sour Cream Banana Bread",
+          "servings": 2.0,
+          "kcal": 542.0,
+          "protein_g": 8.2,
+          "fallback": false,
+          "problems": []
+        }
+      ],
+      "days_within_10pct": 7,
+      "breakfast_note": null
+    },
+    {
+      "profile": "eggetarian, dairy",
+      "breakfasts": [
+        {
+          "name": "Crunchy Granola",
+          "servings": 1.0,
+          "kcal": 533.3,
+          "protein_g": 12.5,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Double Chocolate Banana Muffins",
+          "servings": 1.25,
+          "kcal": 504.2,
+          "protein_g": 6.1,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Vanilla-Scented Granola",
+          "servings": 1.75,
+          "kcal": 673.4,
+          "protein_g": 13.7,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Melt in Your Mouth Banana Bread",
+          "servings": 0.75,
+          "kcal": 437.8,
+          "protein_g": 5.1,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Apple Bread",
+          "servings": 1.5,
+          "kcal": 421.8,
+          "protein_g": 5.1,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Harvest Pumpkin Apple Bread",
+          "servings": 1.75,
+          "kcal": 542.3,
+          "protein_g": 6.1,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Barb's Best Zucchini Bread",
+          "servings": 1.75,
+          "kcal": 607.1,
+          "protein_g": 7.9,
+          "fallback": false,
+          "problems": []
+        }
+      ],
+      "days_within_10pct": 7,
+      "breakfast_note": null
+    },
+    {
+      "profile": "vegetarian, no allergies",
+      "breakfasts": [
+        {
+          "name": "Cardamom Lassi",
+          "servings": 1.75,
+          "kcal": 397.9,
+          "protein_g": 22.4,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Oatmeal Cottage Cheese Pancakes",
+          "servings": 1.25,
+          "kcal": 421.4,
+          "protein_g": 39.2,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Fruit Lassi",
+          "servings": 2.0,
+          "kcal": 430.6,
+          "protein_g": 15.4,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Cracker Barrel's Hashbrowns Casserole - Copycat",
+          "servings": 1.0,
+          "kcal": 488.4,
+          "protein_g": 10.3,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Crunchy Granola",
+          "servings": 1.0,
+          "kcal": 533.3,
+          "protein_g": 12.5,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Baked Maple Oatmeal",
+          "servings": 2.0,
+          "kcal": 651.0,
+          "protein_g": 23.6,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Vanilla-Scented Granola",
+          "servings": 1.25,
+          "kcal": 481.0,
+          "protein_g": 9.8,
+          "fallback": false,
+          "problems": []
+        }
+      ],
+      "days_within_10pct": 7,
+      "breakfast_note": null
+    },
+    {
+      "profile": "vegetarian, peanut and mushroom",
+      "breakfasts": [
+        {
+          "name": "Cardamom Lassi",
+          "servings": 2.0,
+          "kcal": 454.8,
+          "protein_g": 25.6,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Oatmeal Cottage Cheese Pancakes",
+          "servings": 1.25,
+          "kcal": 421.4,
+          "protein_g": 39.2,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Fruit Lassi",
+          "servings": 2.0,
+          "kcal": 430.6,
+          "protein_g": 15.4,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Cracker Barrel's Hashbrowns Casserole - Copycat",
+          "servings": 1.0,
+          "kcal": 488.4,
+          "protein_g": 10.3,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Crunchy Granola",
+          "servings": 0.75,
+          "kcal": 400.0,
+          "protein_g": 9.4,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Baked Maple Oatmeal",
+          "servings": 1.5,
+          "kcal": 488.2,
+          "protein_g": 17.7,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Vanilla-Scented Granola",
+          "servings": 1.25,
+          "kcal": 481.0,
+          "protein_g": 9.8,
+          "fallback": false,
+          "problems": []
+        }
+      ],
+      "days_within_10pct": 7,
+      "breakfast_note": null
+    },
+    {
+      "profile": "vegetarian, gluten",
+      "breakfasts": [
+        {
+          "name": "Yogurt Parfait",
+          "servings": 1.75,
+          "kcal": 522.6,
+          "protein_g": 19.4,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Oatmeal Cottage Cheese Pancakes",
+          "servings": 1.5,
+          "kcal": 505.7,
+          "protein_g": 47.1,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Greek Yogurt With Honey and Walnuts",
+          "servings": 1.25,
+          "kcal": 616.0,
+          "protein_g": 13.9,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Baked Maple Oatmeal",
+          "servings": 1.5,
+          "kcal": 488.2,
+          "protein_g": 17.7,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Crunchy Granola",
+          "servings": 1.0,
+          "kcal": 533.3,
+          "protein_g": 12.5,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Smoothie",
+          "servings": 2.0,
+          "kcal": 594.6,
+          "protein_g": 23.8,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Vanilla-Scented Granola",
+          "servings": 1.25,
+          "kcal": 481.0,
+          "protein_g": 9.8,
+          "fallback": false,
+          "problems": []
+        }
+      ],
+      "days_within_10pct": 7,
+      "breakfast_note": null
+    },
+    {
+      "profile": "vegetarian, tree nuts and sesame",
+      "breakfasts": [
+        {
+          "name": "Oatmeal Cottage Cheese Pancakes",
+          "servings": 1.5,
+          "kcal": 505.7,
+          "protein_g": 47.1,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Cracker Barrel's Hashbrowns Casserole - Copycat",
+          "servings": 1.0,
+          "kcal": 488.4,
+          "protein_g": 10.3,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Vanilla-Scented Granola",
+          "servings": 1.5,
+          "kcal": 577.2,
+          "protein_g": 11.7,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Smoothie",
+          "servings": 2.0,
+          "kcal": 594.6,
+          "protein_g": 23.8,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Glazed Cinnamon Rolls - Bread Machine",
+          "servings": 2.0,
+          "kcal": 556.6,
+          "protein_g": 7.8,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Steel Cut Oatmeal for the Crock Pot",
+          "servings": 2.0,
+          "kcal": 540.4,
+          "protein_g": 17.8,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Best Fruit Smoothie Ever!",
+          "servings": 1.25,
+          "kcal": 493.5,
+          "protein_g": 12.5,
+          "fallback": false,
+          "problems": []
+        }
+      ],
+      "days_within_10pct": 7,
+      "breakfast_note": null
+    },
+    {
+      "profile": "vegan, no allergies",
+      "breakfasts": [
+        {
+          "name": "Crunchy Granola",
+          "servings": 1.0,
+          "kcal": 533.3,
+          "protein_g": 12.5,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Crunchy Peanut Butter Wraps",
+          "servings": 1.75,
+          "kcal": 582.2,
+          "protein_g": 18.7,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Tomato Poha",
+          "servings": 2.0,
+          "kcal": 475.6,
+          "protein_g": 11.0,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Potatoes and Onions (Patate E Cipolle)",
+          "servings": 2.0,
+          "kcal": 595.0,
+          "protein_g": 14.6,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Maple-Raisin Granola",
+          "servings": 0.75,
+          "kcal": 520.1,
+          "protein_g": 10.3,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Magic Bullet Smoothie",
+          "servings": 2.0,
+          "kcal": 700.0,
+          "protein_g": 9.6,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Spicy Hash Browns - Homemade",
+          "servings": 2.0,
+          "kcal": 453.6,
+          "protein_g": 7.8,
+          "fallback": false,
+          "problems": []
+        }
+      ],
+      "days_within_10pct": 7,
+      "breakfast_note": null
+    },
+    {
+      "profile": "vegan, peanut, tree nuts and soy",
+      "breakfasts": [
+        {
+          "name": "Potatoes and Onions (Patate E Cipolle)",
+          "servings": 1.75,
+          "kcal": 520.6,
+          "protein_g": 12.8,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Magic Bullet Smoothie",
+          "servings": 1.25,
+          "kcal": 437.5,
+          "protein_g": 6.0,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Spicy Hash Browns - Homemade",
+          "servings": 2.0,
+          "kcal": 453.6,
+          "protein_g": 7.8,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Crispy Rosemary Potatoes",
+          "servings": 1.75,
+          "kcal": 519.1,
+          "protein_g": 8.2,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Pineapple Oatmeal",
+          "servings": 2.0,
+          "kcal": 513.0,
+          "protein_g": 10.8,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Roasted New/ Fingerling Potatoes",
+          "servings": 2.0,
+          "kcal": 471.4,
+          "protein_g": 9.4,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Indian Home Fries",
+          "servings": 2.0,
+          "kcal": 631.2,
+          "protein_g": 13.6,
+          "fallback": false,
+          "problems": []
+        }
+      ],
+      "days_within_10pct": 7,
+      "breakfast_note": null
+    },
+    {
+      "profile": "vegan, gluten and sesame",
+      "breakfasts": [
+        {
+          "name": "Crunchy Granola",
+          "servings": 1.0,
+          "kcal": 533.3,
+          "protein_g": 12.5,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Potatoes and Onions (Patate E Cipolle)",
+          "servings": 2.0,
+          "kcal": 595.0,
+          "protein_g": 14.6,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Maple-Raisin Granola",
+          "servings": 0.75,
+          "kcal": 520.1,
+          "protein_g": 10.3,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Magic Bullet Smoothie",
+          "servings": 1.5,
+          "kcal": 525.0,
+          "protein_g": 7.2,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Spicy Hash Browns - Homemade",
+          "servings": 2.0,
+          "kcal": 453.6,
+          "protein_g": 7.8,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Pb & J Oatmeal",
+          "servings": 1.0,
+          "kcal": 622.0,
+          "protein_g": 25.7,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Crispy Rosemary Potatoes",
+          "servings": 1.75,
+          "kcal": 519.1,
+          "protein_g": 8.2,
+          "fallback": false,
+          "problems": []
+        }
+      ],
+      "days_within_10pct": 7,
+      "breakfast_note": null
+    },
+    {
+      "profile": "vegan, peanut, tree nuts, soy and gluten",
+      "breakfasts": [
+        {
+          "name": "Potatoes and Onions (Patate E Cipolle)",
+          "servings": 1.75,
+          "kcal": 520.6,
+          "protein_g": 12.8,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Magic Bullet Smoothie",
+          "servings": 1.25,
+          "kcal": 437.5,
+          "protein_g": 6.0,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Spicy Hash Browns - Homemade",
+          "servings": 2.0,
+          "kcal": 453.6,
+          "protein_g": 7.8,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Crispy Rosemary Potatoes",
+          "servings": 1.75,
+          "kcal": 519.1,
+          "protein_g": 8.2,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Pineapple Oatmeal",
+          "servings": 2.0,
+          "kcal": 513.0,
+          "protein_g": 10.8,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Roasted New/ Fingerling Potatoes",
+          "servings": 2.0,
+          "kcal": 471.4,
+          "protein_g": 9.4,
+          "fallback": false,
+          "problems": []
+        },
+        {
+          "name": "Munchies (Lentils)",
+          "servings": 2.0,
+          "kcal": 481.6,
+          "protein_g": 18.0,
+          "fallback": true,
+          "problems": []
+        }
+      ],
+      "days_within_10pct": 7,
+      "breakfast_note": "1 breakfast in this plan is a fallback: few breakfast recipes pass your rules, so a light dish not tagged as breakfast was used."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+# Pipeline parameters. DVC tracks this file, so changing a value reruns the stages that use it.
+data:
+  min_user_ratings: 20      # k-core filter on the Food.com reviews
+  min_recipe_ratings: 15
+  extra_indian: 1500        # extra Indian recipes added as cold-start items
+split:
+  train: 0.7                # per-user, by date: first 70% train, next 10% validation, last 20% test
+  val: 0.1
+  relevant_rating: 4        # a rating of 4 or 5 counts as liked
+lightfm:                    # defaults, replaced by the Optuna result in reports/best_params.json
+  no_components: 32
+  learning_rate: 0.05
+  item_alpha: 0.000001
+  epochs: 20
+  loss: warp
+ncf:
+  dim: 32
+  epochs: 8
+  lr: 0.003
+  batch_size: 2048
+reranker:
+  candidates: 100
+  n_estimators: 300
+  max_depth: 6
+  learning_rate: 0.05
+tune:
+  lightfm_trials: 25
+  hybrid_trials: 60
+eval:
+  k: 10
+  constraint_profiles: 500
+seed: 42
+embeddings:
+  model: sentence-transformers/all-MiniLM-L6-v2

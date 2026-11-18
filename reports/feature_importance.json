@@ -1,0 +1,18 @@
+{
+  "z_content": 0.0467,
+  "z_cf": 0.0521,
+  "z_pop": 0.0625,
+  "hybrid": 0.0981,
+  "hybrid_rank": 0.1669,
+  "cuisine_aff": 0.0437,
+  "meal_aff": 0.0488,
+  "log_n_ratings": 0.0627,
+  "mean_rating": 0.0873,
+  "calories_kcal": 0.053,
+  "protein_g": 0.0521,
+  "carbs_g": 0.0474,
+  "fat_g": 0.0446,
+  "fiber_g": 0.0467,
+  "log_minutes": 0.0541,
+  "is_vegetarian": 0.0335
+}

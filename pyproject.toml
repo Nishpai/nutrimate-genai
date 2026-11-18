@@ -1,0 +1,19 @@
+[project]
+name = "nutrimate-ai"
+version = "1.0.0"
+description = "Personalised food recommendations with hybrid filtering, dietary constraints and RAG"
+requires-python = ">=3.11,<3.13"
+
+[tool.ruff]
+line-length = 130
+target-version = "py311"
+extend-exclude = ["frontend", "data", "models", "mlartifacts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["B008", "E731", "B905"]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]

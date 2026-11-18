@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    env:
+      MYSQL_HOST: 127.0.0.1
+      MYSQL_PORT: "3306"
+      MYSQL_USER: nutrimate_ai
+      MYSQL_PASSWORD: ci-password
+      MYSQL_DATABASE: nutrimate_ai_test
+      JWT_SECRET: ci-only-secret-that-is-long-enough-for-hs256-signing
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      # The Ubuntu runner already has MySQL 8 installed (root password "root"),
+      # so no container is needed.
+      - name: Start MySQL and create the test database
+        run: |
+          sudo systemctl start mysql.service
+          sed "s/change-me/ci-password/" backend/sql/setup_db.sql | mysql -uroot -proot
+      - name: Install dependencies (CPU torch)
+        run: |
+          pip install --index-url https://download.pytorch.org/whl/cpu torch==2.15.0
+          pip install -r requirements-dev.txt
+      - name: Lint
+        run: ruff check .
+      - name: Tests
+        # Model artifacts are not in git, so tests that need them are skipped here.
+        # Run the full suite locally after building the models.
+        run: pytest -rs
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build

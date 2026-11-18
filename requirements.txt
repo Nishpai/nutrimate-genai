@@ -1,0 +1,45 @@
+# NutriMate runtime (API, data processing, recommender scoring, RAG).
+# Tested with Python 3.11 on Linux; every package here ships Windows wheels.
+# Training extras are in requirements-train.txt, test tools in requirements-dev.txt.
+
+# API
+fastapi==0.163.2
+uvicorn==0.54.0
+pydantic==2.14.3
+pydantic-settings==2.16.3
+email-validator==2.4.0
+python-multipart==0.0.34
+pyjwt==2.15.1
+bcrypt==5.0.0
+prometheus-client==0.26.0
+
+# Database (plain SQL, no ORM)
+mysql-connector-python==26.10.0
+
+# Data
+numpy==2.4.6
+scipy==1.17.1
+pandas==3.1.1
+polars==2.1.0
+duckdb==2.0.0
+pyarrow==26.0.1
+openpyxl==3.1.5
+pyyaml==6.0.3
+requests==2.34.2
+
+# Machine learning
+scikit-learn==1.9.1
+xgboost==3.2.0
+joblib==1.6.0
+torch==2.15.0
+mlflow==3.18.0
+
+# GenAI and retrieval
+faiss-cpu==1.16.0
+sentence-transformers==6.3.0
+transformers==5.23.0
+langchain==1.5.0
+langchain-core==1.8.2
+langgraph==1.2.22
+langchain-google-genai==4.5.0
+google-genai==3.5.0

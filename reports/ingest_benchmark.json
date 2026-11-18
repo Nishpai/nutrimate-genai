@@ -1,0 +1,16 @@
+{
+  "file": "foodcom_reviews_joined.csv",
+  "source": "Food.com reviews joined to recipe name, ingredients, instructions and nutrition, exported to CSV",
+  "source_mb": 1902.4,
+  "rows": 1401982,
+  "columns": 23,
+  "skipped_rows": 0,
+  "null_cells": 561243,
+  "seconds": 8.6,
+  "rows_per_second": 163021,
+  "mb_per_second": 221.2,
+  "peak_rss_mb": 797,
+  "output_mb": 382.3,
+  "csv_build_seconds": 3.4,
+  "machine": "Linux x86_64, Python 3.11.18"
+}

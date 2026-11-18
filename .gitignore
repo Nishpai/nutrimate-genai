@@ -1,0 +1,36 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# node
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# data and model artifacts (tracked with DVC, rebuilt with scripts/rebuild)
+/data/raw/
+/data/interim/
+/data/processed/
+/data/cleaned/
+/data/uploads/
+/models/
+/mlflow.db
+/mlartifacts/
+/mlruns/
+/shots/
+
+# editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+/data/bench/

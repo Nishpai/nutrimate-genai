@@ -1,0 +1,20 @@
+{
+  "catalogue_recipes": 7903,
+  "cf_items": 6721,
+  "cf_users": 3666,
+  "positive_interactions": 215739,
+  "tfidf_vocabulary": 3554,
+  "lightfm_params": {
+    "no_components": 48,
+    "learning_rate": 0.010646999683964094,
+    "item_alpha": 1.61438565084453e-05,
+    "epochs": 70,
+    "loss": "warp"
+  },
+  "hybrid_weights": {
+    "content": 0.2347,
+    "cf": 0.4789,
+    "pop": 0.2864
+  },
+  "seconds": 7.2
+}

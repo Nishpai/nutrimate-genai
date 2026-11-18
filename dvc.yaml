@@ -1,0 +1,113 @@
+# Data and model pipeline. Run everything with:  dvc repro
+# (needs the raw files from scripts/download_data.py and requirements-train.txt)
+stages:
+  ingest:
+    cmd: python -m ml.ingest
+    deps:
+      - ml/ingest.py
+      - data/raw/foodrs.duckdb
+      - data/raw/Anuvaad_INDB_2024.11.xlsx
+      - data/raw/usda_sr_legacy
+    outs:
+      - data/interim
+
+  preprocess:
+    cmd: python -m ml.preprocess
+    deps:
+      - ml/preprocess.py
+      - nutrimate_core/constraints.py
+      - data/interim
+    params:
+      - data
+    outs:
+      - data/processed/recipes.parquet
+      - data/processed/interactions.parquet
+      - data/processed/foods.parquet
+      - data/processed/nutrition_flags.parquet
+    metrics:
+      - data/processed/summary.json:
+          cache: false
+
+  split:
+    cmd: python -m ml.split
+    deps:
+      - ml/split.py
+      - data/processed/interactions.parquet
+    params:
+      - split
+      - seed
+    outs:
+      - data/processed/split.parquet
+
+  tune:
+    cmd: python -m ml.tune
+    deps:
+      - ml/tune.py
+      - ml/common.py
+      - ml/cf_models.py
+      - nutrimate_core/recsys.py
+      - data/processed/recipes.parquet
+      - data/processed/split.parquet
+    params:
+      - lightfm
+      - tune
+      - seed
+    outs:
+      - reports/best_params.json:
+          cache: false
+
+  evaluate:
+    cmd: python -m ml.evaluate
+    deps:
+      - ml/evaluate.py
+      - ml/common.py
+      - ml/cf_models.py
+      - nutrimate_core/recsys.py
+      - nutrimate_core/constraints.py
+      - data/processed/recipes.parquet
+      - data/processed/split.parquet
+      - reports/best_params.json
+    params:
+      - ncf
+      - reranker
+      - eval
+      - seed
+    outs:
+      - models/reranker.json
+    metrics:
+      - reports/metrics.json:
+          cache: false
+    plots:
+      - reports/feature_importance.json:
+          cache: false
+
+  train:
+    cmd: python -m ml.train
+    deps:
+      - ml/train.py
+      - ml/cf_models.py
+      - nutrimate_core/recsys.py
+      - data/processed/recipes.parquet
+      - data/processed/interactions.parquet
+      - reports/best_params.json
+    outs:
+      - models/content.joblib
+      - models/lightfm.npz
+      - models/popularity.parquet
+    metrics:
+      - reports/train_info.json:
+          cache: false
+
+  build_index:
+    cmd: python -m ml.build_index
+    deps:
+      - ml/build_index.py
+      - data/processed/recipes.parquet
+      - data/processed/foods.parquet
+    params:
+      - embeddings
+    outs:
+      - models/faiss.index
+      - models/faiss_docs.parquet
+      - models/faiss_info.json:
+          cache: false

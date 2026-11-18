@@ -1,0 +1,8 @@
+# Needed only to retrain the models (python -m ml.train etc. or dvc repro).
+-r requirements.txt
+optuna==5.1.0
+dvc==3.67.1
+# LightFM has no wheels on PyPI and the 1.17 sdist fails to build with current pip.
+# Install it from the GitHub source instead (needs Git, and on Windows the
+# "Desktop development with C++" workload of Microsoft C++ Build Tools):
+#   pip install "git+https://github.com/lyst/lightfm@master"
